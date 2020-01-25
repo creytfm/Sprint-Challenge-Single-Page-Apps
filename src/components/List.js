@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Route } from "react-router-dom";
-import { CharCard, CharImg, CharName, ListBody, CharSpec  }from "./Styles/Stlyles"
+import {
+  CharCard,
+  CharImg,
+  CharName,
+  ListBody,
+  CharSpec
+} from "./Styles/Styles";
 
 // TODO: Add useState to track data from useEffect
 
@@ -26,9 +32,7 @@ const List = () => {
       <Route path="List" component={List} />
       {character.map(character => (
         <CharCard>
-          <CharName>
-          {character.name}
-          </CharName>
+          <CharName>{character.name}</CharName>
           <CharImg src={character.image}></CharImg>
           <CharSpec>{character.species}</CharSpec>
         </CharCard>
