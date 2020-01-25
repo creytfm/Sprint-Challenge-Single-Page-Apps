@@ -1,7 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 1px 2px #a9d3e9;
+  background: rgb(169, 211, 233);
+  background: linear-gradient(
+    0deg,
+    rgba(169, 211, 233, 1) 0%,
+    rgba(151, 215, 215, 1) 100%
+  );
 }
 
 main {
@@ -12,6 +19,7 @@ main {
   background: #fff;
   padding: 15px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 7px;
 }
 
 .grid-view {
@@ -27,13 +35,29 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
+  text-align: center;
+}
+
+.headlink {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ui-center {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.ui-centered {
   text-align: center;
 }
