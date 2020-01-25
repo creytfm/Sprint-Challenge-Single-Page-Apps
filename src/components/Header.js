@@ -12,6 +12,9 @@ export default function Header() {
       <div>
       <Link className="headlink" to="/List">CharacterList</Link>
       </div>
+      <div>
+      <Link className="headlink" to="/SearchBar">Search Characters</Link>
+      </div>
     </header>
   );
 }

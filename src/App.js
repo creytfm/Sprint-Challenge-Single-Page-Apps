@@ -9,9 +9,9 @@ export default function App() {
   return (
     <main>
       <Header />
-      <SearchBar/>
       <Route className="route1" exact path="/" component={WelcomePage} />
       <Route className="route1" path="/List" component={List} />
+      <Route className="route1" path="/SearchBar" component={SearchBar} />
     </main>
   );
 }
